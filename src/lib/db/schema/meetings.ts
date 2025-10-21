@@ -3,7 +3,7 @@ import { text, varchar, timestamp, pgTable, integer, boolean, jsonb } from 'driz
 import { createSelectSchema } from 'drizzle-zod';
 import { z } from 'zod';
 
-import { nanoid } from '@/lib/utils/nano-id';
+import { nanoid } from '@/utils/nano-id';
 
 export const meetings = pgTable('meetings', {
   id: varchar('id', { length: 191 })

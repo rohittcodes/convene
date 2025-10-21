@@ -1,5 +1,5 @@
 import { pgTable, varchar, text, timestamp } from 'drizzle-orm/pg-core';
-import { nanoid } from '@/lib/utils/nano-id';
+import { nanoid } from '@/utils/nano-id';
 
 export const integrationTokens = pgTable('integration_tokens', {
   id: varchar('id', { length: 191 }).primaryKey().$defaultFn(() => nanoid()),

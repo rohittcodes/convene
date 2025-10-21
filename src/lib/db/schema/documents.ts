@@ -3,7 +3,7 @@ import { text, varchar, timestamp, pgTable, customType } from 'drizzle-orm/pg-co
 import { createSelectSchema } from 'drizzle-zod';
 import { z } from 'zod';
 
-import { nanoid } from '@/lib/utils/nano-id';
+import { nanoid } from '@/utils/nano-id';
 
 const bytea = customType<{ data: Buffer; default: false }>({
   dataType() {
